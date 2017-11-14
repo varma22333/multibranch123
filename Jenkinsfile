@@ -1,7 +1,7 @@
 node ("master") {
 stage("checkout")
 {
-    
+     build 'parms'
 }
 
 stage("Build")
