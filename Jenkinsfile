@@ -1,5 +1,3 @@
-
-node ("master") {
 properties([
   parameters([
     string(name: 'param1', description: 'Possible options: a b c d', defaultValue: ''),
@@ -8,9 +6,7 @@ properties([
     string(name: 'param4', description: 'Possible options: 1 2 3 4', defaultValue: ''),
   ])
 ])
-
-
-
+node ("master") {
 stage("checkout")
 {
     
