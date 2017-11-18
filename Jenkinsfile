@@ -4,12 +4,18 @@ properties([
     string(name: 'param2', description: 'Possible options: e f g h', defaultValue: ''),
     string(name: 'param3', description: 'Possible options: k l m n', defaultValue: ''),
     string(name: 'param4', description: 'Possible options: 1 2 3 4', defaultValue: ''),
+    
+    
   ])
 ])
 node ("master") {
 stage("checkout")
 {
-    
+  echo "${param1}"
+  echo "${param2}"
+  echo "${param3}"
+  echo "${param4}"
+  
 }
 
 stage("Build")
