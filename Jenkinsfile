@@ -15,7 +15,7 @@ stage("checkout")
   echo "${param2}"
   echo "${param3}"
   echo "${param4}"
-  
+  checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/varma22333/multibranch123.git']]])
 }
 
 stage("Build")
