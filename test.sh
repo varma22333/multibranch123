@@ -1,1 +1,4 @@
-pwd()
+node("Master")
+{
+echo "sandeep"
+}
