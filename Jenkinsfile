@@ -20,7 +20,8 @@ stage("checkout")
 
 stage("Build")
 {
-      
+  sh 'test.sh'
+      sh 'chmod 777 gradlew' 
 }
 stage("QA")
 {
