@@ -23,7 +23,7 @@ stage("Build")
   
   sh 'ls -ltr'
    sh 'chmod 777 test.sh' 
-  sh 'test.sh'
+  sh './test.sh'
      
 }
 stage("QA")
